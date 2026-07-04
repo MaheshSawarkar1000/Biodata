@@ -1,0 +1,428 @@
+/* ============================================
+   BIODATA STYLING - OPTIMIZED
+   ============================================ */
+
+/* CSS Variables - Color Scheme */
+:root {
+    --maroon: #4a1120;
+    --maroon-deep: #2e0912;
+    --maroon-soft: #6e1c30;
+    --gold: #c9973f;
+    --gold-light: #e8c988;
+    --gold-pale: #f3e3bd;
+    --ivory: #f8f1e4;
+    --ivory-2: #efe3c9;
+    --ink: #2a1c14;
+    --ink-soft: #77645a;
+    --line: #d9c39c;
+    --emerald: #1e4536;
+}
+
+/* Global Styles */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--ivory);
+    background-image:
+        radial-gradient(circle at 15% 10%, rgba(201, 151, 63, 0.1) 0, transparent 40%),
+        radial-gradient(circle at 88% 92%, rgba(74, 17, 32, 0.08) 0, transparent 42%);
+    font-family: 'Karla', sans-serif;
+    color: var(--ink);
+    padding: 54px 20px 80px;
+    line-height: 1.6;
+}
+
+/* Sheet Container */
+.sheet {
+    max-width: 940px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    background: #fffdf8;
+    box-shadow: 0 2px 4px rgba(50, 15, 10, 0.1), 0 34px 70px -30px rgba(50, 15, 10, 0.35);
+    border: 1px solid var(--line);
+}
+
+/* ============================================
+   SIDEBAR STYLES
+   ============================================ */
+
+.sidebar {
+    position: relative;
+    background: linear-gradient(165deg, var(--maroon) 0%, var(--maroon-deep) 78%);
+    color: var(--ivory);
+    padding: 46px 34px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.sidebar::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: repeating-linear-gradient(
+        135deg,
+        rgba(232, 201, 136, 0.05) 0px,
+        rgba(232, 201, 136, 0.05) 1px,
+        transparent 1px,
+        transparent 26px
+    );
+    pointer-events: none;
+}
+
+.sidebar::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 10px;
+    background: linear-gradient(to right, var(--gold), var(--gold-light), var(--gold));
+}
+
+/* Medallion (Profile Photo Container) */
+.medallion {
+    position: relative;
+    width: 156px;
+    height: 156px;
+    margin-bottom: 22px;
+    z-index: 1;
+}
+
+.medallion svg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.photo-disc {
+    position: absolute;
+    inset: 14px;
+    border-radius: 50%;
+    background: var(--ivory-2);
+    border: 2px solid var(--gold-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.photo-disc img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Sidebar Typography */
+.kicker-dev {
+    font-family: 'Tiro Devanagari Hindi', serif;
+    font-size: 15px;
+    color: var(--gold-light);
+    letter-spacing: 0.04em;
+    margin-bottom: 6px;
+    z-index: 1;
+}
+
+.kicker {
+    font-family: 'Marcellus', serif;
+    font-size: 10.5px;
+    letter-spacing: 0.34em;
+    text-transform: uppercase;
+    color: var(--gold-light);
+    margin-bottom: 16px;
+    z-index: 1;
+}
+
+.sidebar h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 1.15;
+    margin: 0 0 6px;
+    color: #fdf7ea;
+    z-index: 1;
+}
+
+.dob {
+    font-family: 'Marcellus', serif;
+    font-size: 13px;
+    color: var(--gold-pale);
+    letter-spacing: 0.03em;
+    margin-bottom: 26px;
+    z-index: 1;
+}
+
+.side-divider {
+    width: 46px;
+    height: 1px;
+    background: var(--gold);
+    margin-bottom: 26px;
+    z-index: 1;
+}
+
+/* Quick Facts */
+.quickfacts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: left;
+    z-index: 1;
+}
+
+.qf-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.qf-icon {
+    width: 15px;
+    height: 15px;
+    fill: var(--gold-light);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.qf-item .qf-text {
+    font-size: 13px;
+    line-height: 1.45;
+    color: var(--ivory-2);
+}
+
+.qf-item .qf-text b {
+    display: block;
+    font-family: 'Marcellus', serif;
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gold-light);
+    margin-bottom: 2px;
+    font-weight: 400;
+}
+
+.side-foot {
+    margin-top: auto;
+    padding-top: 30px;
+    font-family: 'Marcellus', serif;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    color: var(--gold-pale);
+    text-transform: uppercase;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+/* ============================================
+   MAIN CONTENT STYLES
+   ============================================ */
+
+.content {
+    padding: 50px 52px 44px;
+    position: relative;
+}
+
+.content::before {
+    content: "";
+    position: absolute;
+    top: 36px;
+    bottom: 36px;
+    left: 0;
+    width: 1px;
+    background: linear-gradient(to bottom, transparent, var(--line), transparent);
+}
+
+/* Top Strip */
+.top-strip {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 6px;
+}
+
+.eyebrow {
+    font-family: 'Marcellus', serif;
+    font-size: 11px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--gold);
+}
+
+.ref {
+    font-size: 11px;
+    color: var(--ink-soft);
+    font-style: italic;
+}
+
+/* Sections */
+.content-section {
+    margin-top: 38px;
+}
+
+.content-section:first-of-type {
+    margin-top: 18px;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.section-icon {
+    width: 34px;
+    height: 34px;
+    flex-shrink: 0;
+    fill: var(--maroon);
+}
+
+.section-title h2 {
+    font-family: 'Marcellus', serif;
+    font-size: 17px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--maroon);
+    margin: 0;
+    white-space: nowrap;
+}
+
+.rule {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, var(--line), transparent 85%);
+}
+
+/* Ledger Table */
+.ledger {
+    border-top: 1px solid var(--line);
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 190px 1fr;
+    padding: 12px 4px;
+    border-bottom: 1px solid var(--line);
+}
+
+.row:nth-child(odd) {
+    background: rgba(201, 151, 63, 0.045);
+}
+
+.row .label {
+    font-family: 'Marcellus', serif;
+    font-size: 12.5px;
+    letter-spacing: 0.03em;
+    color: var(--ink-soft);
+    font-weight: 500;
+}
+
+.row .value {
+    font-size: 15px;
+    color: var(--ink);
+    font-weight: 600;
+}
+
+/* Highlight Band */
+.highlight-band {
+    margin-top: 40px;
+    background: linear-gradient(120deg, var(--emerald), #14352a);
+    border-radius: 3px;
+    padding: 20px 26px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: var(--gold-pale);
+}
+
+.highlight-icon {
+    width: 26px;
+    height: 26px;
+    fill: var(--gold-light);
+    flex-shrink: 0;
+}
+
+.htext {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #f3ecd8;
+}
+
+/* Footer */
+.content-footer {
+    margin-top: 44px;
+    padding-top: 22px;
+    border-top: 1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-footer .om {
+    font-family: 'Tiro Devanagari Hindi', serif;
+    font-size: 15px;
+    color: var(--maroon-soft);
+}
+
+.content-footer .stamp {
+    font-family: 'Marcellus', serif;
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 760px) {
+    .sheet {
+        grid-template-columns: 1fr;
+    }
+
+    .content::before {
+        display: none;
+    }
+
+    .content {
+        padding: 40px 26px 34px;
+    }
+
+    .sidebar {
+        padding: 40px 26px 34px;
+    }
+
+    .row {
+        grid-template-columns: 140px 1fr;
+    }
+}
+
+/* Print Styles */
+@media print {
+    body {
+        padding: 0;
+        background: #fff;
+    }
+
+    .sheet {
+        box-shadow: none;
+        border: none;
+        grid-template-columns: 260px 1fr;
+    }
+}

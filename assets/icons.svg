@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <!-- Location Icon -->
+  <symbol id="location" viewBox="0 0 24 24">
+    <path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z" fill="currentColor"/>
+  </symbol>
+
+  <!-- Occupation Icon (House) -->
+  <symbol id="occupation" viewBox="0 0 24 24">
+    <path d="M12 3 2 12h3v8h6v-6h2v6h6v-8h3z" fill="currentColor"/>
+  </symbol>
+
+  <!-- Education Icon (Briefcase) -->
+  <symbol id="education" viewBox="0 0 24 24">
+    <path d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3zM5 13.2V17c0 2 3 3.6 7 3.6s7-1.6 7-3.6v-3.8l-7 3.8-7-3.8z" fill="currentColor"/>
+  </symbol>
+
+  <!-- Heart Icon -->
+  <symbol id="heart" viewBox="0 0 24 24">
+    <path d="M12 21s-8-4.6-8-11a5 5 0 0 1 8-4 5 5 0 0 1 8 4c0 6.4-8 11-8 11z" fill="currentColor"/>
+  </symbol>
+
+  <!-- Email Icon -->
+  <symbol id="email" viewBox="0 0 24 24">
+    <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z" fill="currentColor"/>
+  </symbol>
+
+  <!-- Personal Details Icon -->
+  <symbol id="personal" viewBox="0 0 34 34">
+    <circle cx="17" cy="17" r="16" fill="none" stroke="#c9973f" stroke-width="1"/>
+    <path d="M17 9c-2.5 0-4 1.8-4 4 0 1.3.5 2.2 1.3 2.8-1.3.5-2.6 1.2-3.3 2.2M17 9c2.5 0 4 1.8 4 4 0 1.3-.5 2.2-1.3 2.8 1.3.5 2.6 1.2 3.3 2.2" fill="none" stroke="#4a1120" stroke-width="1.2"/>
+    <circle cx="17" cy="11" r="3" fill="none" stroke="#4a1120" stroke-width="1"/>
+    <path d="M22 23c0-2.2-2.4-4-5-4s-5 1.8-5 4" fill="none" stroke="#4a1120" stroke-width="1.2"/>
+  </symbol>
+
+  <!-- Family Icon -->
+  <symbol id="family" viewBox="0 0 34 34">
+    <circle cx="17" cy="17" r="16" fill="none" stroke="#c9973f" stroke-width="1"/>
+    <circle cx="12" cy="10" r="2" fill="#4a1120"/>
+    <circle cx="22" cy="10" r="2" fill="#4a1120"/>
+    <circle cx="17" cy="8" r="1.5" fill="#4a1120"/>
+    <path d="M12 22v-2c0-2.2 2.2-4 5-4s5 1.8 5 4v2" fill="none" stroke="#4a1120" stroke-width="1.2"/>
+  </symbol>
+
+  <!-- Contact Icon (Phone) -->
+  <symbol id="contact" viewBox="0 0 34 34">
+    <circle cx="17" cy="17" r="16" fill="none" stroke="#c9973f" stroke-width="1"/>
+    <path d="M11 12h12v10H11z" fill="none" stroke="#4a1120" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M13 12v-1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v1" stroke="#4a1120" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+
+  <!-- Star Icon -->
+  <symbol id="star" viewBox="0 0 24 24">
+    <path d="M12 2 9 9l-7 1 5 5-1.5 7L12 18l6.5 4L17 15l5-5-7-1z" fill="currentColor"/>
+  </symbol>
+</svg>
