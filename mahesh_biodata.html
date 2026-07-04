@@ -79,35 +79,25 @@
     width: 156px; height:156px;
     margin-bottom: 22px;
     z-index:1;
-    background: #e8e0d0;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
-
   .medallion svg{ position:absolute; inset:0; width:100%; height:100%; }
-  
+  .medallion .frame{ animation:none; }
   .photo-disc{
     position:absolute;
     inset: 14px;
     border-radius:50%;
     background: var(--ivory-2);
     border: 2px solid var(--gold-light);
-    display:flex; 
-    align-items:center; 
-    justify-content:center;
+    display:flex; align-items:center; justify-content:center;
     overflow:hidden;
   }
-  
-  .photo-disc img{ 
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
-    border-radius: 50%;
-  }
-  
   .photo-disc svg{ width:56%; height:56%; fill: var(--maroon); opacity:0.4; position:static; }
+  .photo-disc img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+  }
 
   .kicker-dev{
     font-family:'Tiro Devanagari Hindi', serif;
@@ -162,26 +152,22 @@
     text-align:left;
     z-index:1;
   }
-  
   .qf-item{
     display:flex;
     align-items:flex-start;
     gap: 12px;
   }
-  
   .qf-item svg{
     width:15px; height:15px;
     fill: var(--gold-light);
     flex-shrink:0;
     margin-top:2px;
   }
-  
   .qf-item .qf-text{
     font-size: 13px;
     line-height:1.45;
     color: var(--ivory-2);
   }
-  
   .qf-item .qf-text b{
     display:block;
     font-family:'Marcellus', serif;
@@ -224,7 +210,6 @@
     align-items:baseline;
     margin-bottom: 6px;
   }
-  
   .top-strip .eyebrow{
     font-family:'Marcellus', serif;
     font-size: 11px;
@@ -232,7 +217,6 @@
     text-transform:uppercase;
     color: var(--gold);
   }
-  
   .top-strip .ref{
     font-size: 11px;
     color: var(--ink-soft);
@@ -248,14 +232,11 @@
     gap: 16px;
     margin-bottom: 20px;
   }
-  
   .section-title .glyph{
     width:34px; height:34px;
     flex-shrink:0;
   }
-  
   .section-title .glyph svg{ width:100%; height:100%; }
-  
   .section-title h2{
     font-family:'Marcellus', serif;
     font-size: 17px;
@@ -265,7 +246,6 @@
     margin:0;
     white-space:nowrap;
   }
-  
   .section-title .rule{
     flex:1;
     height:1px;
@@ -275,23 +255,19 @@
   .ledger{
     border-top: 1px solid var(--line);
   }
-  
   .row{
     display:grid;
     grid-template-columns: 190px 1fr;
     padding: 12px 4px;
     border-bottom: 1px solid var(--line);
   }
-  
   .row:nth-child(odd){ background: rgba(201,151,63,0.045); }
-  
   .row .label{
     font-family:'Marcellus', serif;
     font-size: 12.5px;
     letter-spacing:0.03em;
     color: var(--ink-soft);
   }
-  
   .row .value{
     font-size: 15px;
     color: var(--ink);
@@ -308,9 +284,7 @@
     gap: 16px;
     color: var(--gold-pale);
   }
-  
   .highlight-band svg{ width:26px; height:26px; fill:var(--gold-light); flex-shrink:0; }
-  
   .highlight-band .htext{
     font-family:'Cormorant Garamond', serif;
     font-style: italic;
@@ -327,13 +301,11 @@
     justify-content:space-between;
     align-items:center;
   }
-  
   .content-footer .om{
     font-family:'Tiro Devanagari Hindi', serif;
     font-size: 15px;
     color: var(--maroon-soft);
   }
-  
   .content-footer .stamp{
     font-family:'Marcellus', serif;
     font-size: 10px;
@@ -382,7 +354,7 @@
       </div>
     </div>
 
-    <h1>Mahesh M. Sawarkar</h1>
+    <h1>Mahesh M.Sawarkar</h1>
     <div class="dob">15th January, 1989&nbsp;</div>
 
     <div class="side-divider"></div>
@@ -404,7 +376,7 @@
         <div class="qf-text"><b>Contact</b>+91 93736 21973</div>
       </div>
       <div class="qf-item">
-        <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
         <div class="qf-text"><b>Email</b>maheshsawarkar897@gmail.com</div>
       </div>
     </div>
@@ -417,18 +389,12 @@
 
     <div class="top-strip">
       <span class="eyebrow">Biodata for Marriage</span>
-      <span class="ref"> </span>
+      <span class="ref">Pin — 441001</span>
     </div>
 
     <div class="section">
       <div class="section-title">
-        <span class="glyph">
-          <svg viewBox="0 0 34 34">
-            <circle cx="17" cy="17" r="16" fill="none" stroke="#c9973f" stroke-width="1"/>
-            <circle cx="17" cy="12" r="3" fill="#c9973f"/>
-            <path d="M17 16c-3 0-5 1.5-5 3v4h10v-4c0-1.5-2-3-5-3z" fill="#c9973f"/>
-          </svg>
-        </span>
+        <span class="glyph"><svg viewBox="0 0 34 34"><circle cx="17" cy="17" r="16" fill="none" stroke="#c9973f" stroke-width="1"/><path d="M17 9c-2.5 0-4 1.8-4 4 0 1.3.5 2.2 1.3 2.8-1.3.5-2.6 1.8-2.6 4 0 2.6 2.3 4.3 5.3 4.3s5.3-1.7 5.3-4.3c0-2.2-1.3-3.5-2.6-4 .8-.6 1.3-1.5 1.3-2.8 0-2.2-1.5-4-4-4z" fill="#4a1120"/><circle cx="15" cy="13.6" r="0.7" fill="#f8f1e4"/><circle cx="19" cy="13.6" r="0.7" fill="#f8f1e4"/></svg></span>
         <h2>Personal Details</h2>
         <span class="rule"></span>
       </div>
@@ -447,14 +413,7 @@
 
     <div class="section">
       <div class="section-title">
-        <span class="glyph">
-          <svg viewBox="0 0 34 34">
-            <circle cx="17" cy="17" r="16" fill="none" stroke="#c9973f" stroke-width="1"/>
-            <circle cx="12" cy="13" r="2" fill="#c9973f"/>
-            <circle cx="22" cy="13" r="2" fill="#c9973f"/>
-            <path d="M10 22c0-2 2-3 7-3s7 1 7 3v2H10z" fill="#c9973f"/>
-          </svg>
-        </span>
+        <span class="glyph"><svg viewBox="0 0 34 34"><circle cx="17" cy="17" r="16" fill="none" stroke="#c9973f" stroke-width="1"/><path d="M12 22v-2c0-2.2 2.2-4 5-4s5 1.8 5 4v2" fill="none" stroke="#4a1120" stroke-width="1.4"/><circle cx="17" cy="13" r="3" fill="#4a1120"/></svg></span>
         <h2>Family Background</h2>
         <span class="rule"></span>
       </div>
@@ -468,19 +427,13 @@
     </div>
 
     <div class="highlight-band">
-      <svg viewBox="0 0 24 24"><path d="M12 2 9 9l-7 1 5 5-1.5 7L12 18l6.5 4L17 15l5-5-7-1z" fill="currentColor"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M12 2 9 9l-7 1 5 5-1.5 7L12 18l6.5 4L17 15l5-5-7-1z"/></svg>
       <div class="htext">"Seeking a life partner to build a home rooted in respect, warmth, and shared purpose."</div>
     </div>
 
     <div class="section">
       <div class="section-title">
-        <span class="glyph">
-          <svg viewBox="0 0 34 34">
-            <circle cx="17" cy="17" r="16" fill="none" stroke="#c9973f" stroke-width="1"/>
-            <rect x="10" y="12" width="14" height="10" fill="none" stroke="#4a1120" stroke-width="1.5"/>
-            <path d="M12 12V9h10v3" fill="none" stroke="#4a1120" stroke-width="1.5"/>
-          </svg>
-        </span>
+        <span class="glyph"><svg viewBox="0 0 34 34"><circle cx="17" cy="17" r="16" fill="none" stroke="#c9973f" stroke-width="1"/><path d="M11 12h12v10H11z" fill="none" stroke="#4a1120" stroke-width="1.3"/><path d="M11 12l6 5 6-5" fill="none" stroke="#4a1120" stroke-width="1.3"/></svg></span>
         <h2>Contact Details</h2>
         <span class="rule"></span>
       </div>
